@@ -1,0 +1,3 @@
+var vmdetails = new Vue({
+    
+});

@@ -5,7 +5,7 @@ Vue.use(VueStorage, {
     storage: 'local', // storage name session, local, memory
 });
 
-URLPrefix.token = Vue.ls.get('member_token')
+// URLPrefix.token = Vue.ls.get('member_token')
 
 function parseParams(data) {
     try {
