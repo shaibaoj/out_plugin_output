@@ -82,6 +82,9 @@ var config = {
             Arr[i] = strArr[i] + config.ImgSize;
         }
         return Arr;
+    },
+    addPlugin: function(){
+        $('body').prepend('<div id="hpt-plugin"></div>');
     }
 };
 
@@ -153,4 +156,7 @@ var ajaxGetJsonp = function (url, data, successfun, errorfun) {  //jsonp跨域�
         },
     });
 };
+
+
+config.addPlugin();
 
