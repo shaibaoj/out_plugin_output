@@ -84,7 +84,9 @@ var config = {
         return Arr;
     },
     addPlugin: function(){
-        $('body').prepend('<div id="hpt-plugin"></div>');
+        $body = $('body');
+        $body.prepend('<div id="hpt-plugin"></div>');
+        $body.css('padding:','38px 0 0');
     }
 };
 
