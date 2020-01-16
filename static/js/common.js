@@ -1591,12 +1591,7 @@ var vmplugin = new Vue({
     el: "#hpt-plugin",
     data:{},
     mounted: function() {},
-    methods:{
-        logout:function(){
-            Vue.ls.remove('member_token')
-            window.location.href="/";
-        }
-    }
+    methods:{}
 });
 
 var vmpluginmin = new Vue({
