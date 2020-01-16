@@ -8,11 +8,11 @@
 		"url": "https://static.youdanhui.com/static/js/common.js"
 	},
 	{
-		"type": "js",
-		"url": "https://static.youdanhui.com/static/js/coupon.js"
+		"type": "css",
+		"url": "https://static.youdanhui.com/css/common.css"
 	},
 	{
 		"type": "css",
-		"url": "https://static.youdanhui.com/static/css/style.css"
+		"url": "https://static.youdanhui.com/css/layer.css"
 	}
 ]
