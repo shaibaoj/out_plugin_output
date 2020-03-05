@@ -277,7 +277,7 @@ var tools_commission  = '\
                         <p><a href="https://www.haopintui.net" target="_blank">https://www.haopintui.net</a></p>\
                     </div>\
                     <div class="qing-addin-qr">\
-                        <p>微信扫码<br>领取福利</p> <img src="https://plugsource.qingtaoke.com/dist/new/code.png" width="82"\
+                        <p>微信扫码<br>领取福利</p> <img src="https://static.cdn.youdanhui.com/dist/new/code.png" width="82"\
                             height="82">\
                     </div>\
                 </div>\
