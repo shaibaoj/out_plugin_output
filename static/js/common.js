@@ -583,7 +583,7 @@ var tools_transform = '\
             </div>\
             <h1>可用图片素材</h1>\
             <div class="imgs-box">\
-                <ul class="imgs">\
+                <ul class="imgs" v-if="goods && goods.goods">\
                     <li v-for="(item,index) in goods.goods.picList" @click="changePic(index)" :class="[index == transformData.picIndex?\'active\':\'\']"><i></i>\
                     <img :src="item">\
                     </li>\
@@ -598,10 +598,10 @@ var tools_transform = '\
             </ul>\
             <div :class="[\'area\',\'skin-\'+(transformData.transformIndex+1)]" id="qing-spin-copy">\
                 <img :src="transformPreview" width="115" height="115">\
-                <p>{{goods.goods.d_title}}</p>\
-                <p>【原价】{{goods.price.price}}</p>\
-                <p>【到手价】{{goods.price.buy_price}}</p>\
-                <p>{{goods.goods.comment}}</p>\
+                <p v-if="goods && goods.goods">{{goods.goods.d_title}}</p>\
+                <p v-if="goods && goods.price">【原价】{{goods.price.price}}</p>\
+                <p v-if="goods && goods.price">【到手价】{{goods.price.buy_price}}</p>\
+                <p v-if="goods && goods.goods">{{goods.goods.comment}}</p>\
                 <!---->\
                 <!---->\
                 <!---->\
