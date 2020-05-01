@@ -277,7 +277,7 @@ var tools_commission  = '\
                         <p><a href="https://www.haopintui.net" target="_blank">https://www.haopintui.net</a></p>\
                     </div>\
                     <div class="qing-addin-qr">\
-                        <p>微信扫码<br>领取福利</p> <img src="https://static.cdn.youdanhui.com/dist/new/code.png" width="82"\
+                        <p>微信扫码<br>领取福利</p> <img src="https://staticcdn.haopintui.net/static/platform/images/web/plugin/code.png" width="82"\
                             height="82">\
                     </div>\
                 </div>\
@@ -531,41 +531,6 @@ var tools_platform = '\
 </div>\
 ';
 
-// <li>\
-//     <div class="qing-clear">\
-//         <div class="hpt-col-1"><i class="i-5"></i>大淘客</div>\
-//         <div class="hpt-col-3">\
-//             <div class="hpt-cell-1"><a\
-//                     href="http://www.dataoke.com/search/?keywords=605639136423&amp;xuan=keyword"\
-//                     target="_blank">6.9元</a></div>\
-//             <div class="hpt-cell-2">券 <a\
-//                     href="http://www.dataoke.com/search/?keywords=605639136423&amp;xuan=keyword"\
-//                     target="_blank">3.0元</a></div>\
-//             <div class="hpt-cell-3"><a\
-//                     href="http://www.dataoke.com/search/?keywords=605639136423&amp;xuan=keyword"\
-//                     target="_blank">01-10</a> 到期</div>\
-//             <div class="hpt-cell-4">千鸟谷推广团队-老大</div>\
-//         </div>\
-//     </div>\
-// </li>\
-// <li>\
-//     <div class="qing-clear">\
-//         <div class="hpt-col-1"><i class="i-6"></i>好单库</div>\
-//         <div class="hpt-col-3">\
-//             <div class="hpt-cell-1"><a\
-//                     href="https://www.haodanku.com/index/index/nav/3/keyword/605639136423"\
-//                     target="_blank">6.9元</a></div>\
-//             <div class="hpt-cell-2">券 <a\
-//                     href="https://www.haodanku.com/index/index/nav/3/keyword/605639136423"\
-//                     target="_blank">3.0元</a></div>\
-//             <div class="hpt-cell-3"><a\
-//                     href="https://www.haodanku.com/index/index/nav/3/keyword/605639136423"\
-//                     target="_blank">01-10</a> 到期</div>\
-//             <div class="hpt-cell-4">千鸟谷推广团队</div>\
-//         </div>\
-//     </div>\
-// </li>\
-
 var tools_transform = '\
 <div class="tools_transform hide">\
     <div class="spin">\
@@ -638,7 +603,6 @@ var tools_tools ='\
     <div class="setting qing-clear">\
         <p>设置话术模板：</p>\
         <ul>\
-            <li><a href="javascript:;" @click="insert(\'{图片}\')">{图片}</a></li>\
             <li><a href="javascript:;" @click="insert(\'{短标题}\')">{短标题}</a></li>\
             <li><a href="javascript:;" @click="insert(\'{介绍}\')">{介绍}</a></li>\
             <li><a href="javascript:;" @click="insert(\'{店铺类型}\')">{店铺类型}</a></li>\
@@ -727,21 +691,21 @@ Vue.component('hpt-coupon', {
             },
             toolsData:{
                 defaultTemplate:'\
-{图片}\r\n\
 {短标题}\r\n\
 券后【{券后价}元】包邮秒杀\r\n\
-领券下单: {二合一短链接}\r\n\
+--------------------------------------\r\n\
 {介绍}\r\n\
-本群专享优惠！已抢{销量}件！\r\n\
-查看商品：复制这条信息{淘口令}，打开☞手机淘宝☜即可查看并下单！',
+--------------------------------------\r\n\
+领券下单链接: {二合一短链接},或者复制这段描述{淘口令}，打开☞手机淘◇寳☜即可领券购买！',
                 template:'\
-{图片} \r\n\
 {短标题} \r\n\
 券后【{券后价}元】包邮秒杀 \r\n\
 领券下单: {二合一短链接} \r\n\
+--------------------------------------\r\n\
 {介绍} \r\n\
+--------------------------------------\r\n\
 本群专享优惠！已抢{销量}件！\r\n\
-查看商品：复制这条信息{淘口令}，打开☞手机淘宝☜即可查看并下单！',
+下单方式：复制这段描述{淘口令}，打开☞手机淘◇寳☜即可领券购买！',
                 goods:null,
                 api:null,
                 layerOpenIndex:0,
@@ -1407,7 +1371,6 @@ Vue.component('hpt-coupon-min', {
 
 
 Vue.component('hpt-set', {
-    // mixins: [vmminxShopData],
     props: ['value'],
     data: function () {
         return {
