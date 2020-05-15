@@ -5,14 +5,14 @@
 	},
 	{
 		"type": "js",
-		"url": "https://static.youdanhui.com/static/js/common.js"
+		"url": "https://cdn.jsdelivr.net/gh/shaibaoj/out_static/static/js/common.js"
 	},
 	{
 		"type": "css",
-		"url": "https://static.youdanhui.com/css/common.css"
+		"url": "https://cdn.jsdelivr.net/gh/shaibaoj/out_static/css/common.css"
 	},
 	{
 		"type": "css",
-		"url": "https://static.youdanhui.com/css/layer.css"
+		"url": "https://cdn.jsdelivr.net/gh/shaibaoj/out_static/css/layer.css"
 	}
 ]

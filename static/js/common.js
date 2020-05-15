@@ -1565,13 +1565,13 @@ var vmpluginmin = new Vue({
 });
 
 // var link = document.createElement("link");
-// link.href = 'https://static.youdanhui.com/css/common.css';
+// link.href = 'https://cdn.jsdelivr.net/gh/shaibaoj/out_static/css/common.css';
 // link.type = "text/css";
 // link.rel = "stylesheet";
 // document.getElementsByTagName("head")[0].appendChild(link);
 
 // let menu = document.createElement("script");
 // menu.type="text/javascript";
-// menu.src="https://static.youdanhui.com/static/js/layer.js?p="+new Date().getTime();
+// menu.src="https://cdn.jsdelivr.net/gh/shaibaoj/out_static/static/js/layer.js?p="+new Date().getTime();
 // document.body.appendChild(menu);
 
