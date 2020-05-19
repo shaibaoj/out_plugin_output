@@ -9,10 +9,10 @@
 	},
 	{
 		"type": "css",
-		"url": "https://cdn.jsdelivr.net/gh/shaibaoj/out_static/css/common.css"
+		"url": "https://static.haopintui.net/out_static/out/css/common.css"
 	},
 	{
 		"type": "css",
-		"url": "https://cdn.jsdelivr.net/gh/shaibaoj/out_static/css/layer.css"
+		"url": "https://static.haopintui.net/out_static/out/css/layer.css"
 	}
 ]
