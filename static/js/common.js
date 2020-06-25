@@ -549,7 +549,7 @@ var tools_transform = '\
             <h1>可用图片素材</h1>\
             <div class="imgs-box">\
                 <ul class="imgs" v-if="goods && goods.goods">\
-                    <li v-for="(item,index) in goods.goods.picList" @click="changePic(index)" :class="[index == transformData.picIndex?\'active\':\'\']"><i></i>\
+                    <li v-for="(item,index) in goods.goods.pList" @click="changePic(index)" :class="[index == transformData.picIndex?\'active\':\'\']"><i></i>\
                     <img :src="item">\
                     </li>\
                 </ul>\
@@ -1074,7 +1074,7 @@ Vue.component('hpt-coupon', {
         },
         transformPreview: function transformPreview() {
             if(this.goods && this.goods.goods){
-                return 'https://imgcdn.youdanhui.com/imgcdn/'+$.md5(''+this.goods.goods.picList[this.transformData.picIndex])+'.jpg?src='+encodeURIComponent(this.goods.goods.picList[this.transformData.picIndex]);
+                return 'https://imgcdn.youdanhui.com/imgcdn/'+$.md5(''+this.goods.goods.pList[this.transformData.picIndex])+'.jpg?src='+encodeURIComponent(this.goods.goods.pList[this.transformData.picIndex]);
             }else{
                 return '';
             }
